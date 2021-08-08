@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import AuthContext from '../../contexts/auth';
+import React from 'react';
+import { useAuth } from '../../contexts/auth';
 
 const Login = () => {
-    const context = useContext(AuthContext);
+    const context = useAuth();
     console.log(context);
     
     function handleLogin() {
