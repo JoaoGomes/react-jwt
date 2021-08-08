@@ -1,12 +1,12 @@
 import React from 'react';
 import Routes from './routes';
-import AuthContext from './contexts/auth';
+import { AuthProvider } from './contexts/auth';
 
 function App() {
   return (
-    <AuthContext.Provider value={{signed: true}}>
+    <AuthProvider>
       <Routes />
-    </AuthContext.Provider>
+    </AuthProvider>
   );
 }
 
